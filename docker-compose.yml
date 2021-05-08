@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  mindustry:
+    build: .
+    ports:
+      - 6567:6567
+      - 6567:6567/udp
+    stdin_open: true
+    tty: true
