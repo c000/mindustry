@@ -1,8 +1,8 @@
 from busybox as downloader
 
-RUN wget https://github.com/Anuken/Mindustry/releases/download/v126.2/server-release.jar
+RUN wget https://github.com/Anuken/Mindustry/releases/download/v146/server-release.jar
 
-from openjdk:17-slim
+from openjdk:23-slim-bullseye
 
 COPY --from=downloader server-release.jar ./
 
