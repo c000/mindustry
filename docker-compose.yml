@@ -1,9 +1,5 @@
 version: "3.9"
 services:
-  mindustry:
+  server:
     build: .
-    ports:
-      - 6567:6567
-      - 6567:6567/udp
-    stdin_open: true
-    tty: true
+    command: tailscaled --tun=userspace-networking
